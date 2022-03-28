@@ -1,0 +1,7 @@
+/*
+Enter your query here.
+*/
+select if(a+b <= c or b+c <= a or a+c <= b, "Not A Triangle", 
+          if(3*a = a+b+c, "Equilateral",
+          if(a=b or b=c or c=a, "Isosceles", "Scalene")))
+from triangles;
